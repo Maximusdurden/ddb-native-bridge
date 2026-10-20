@@ -4,8 +4,8 @@
 export class DDBAuth {
   static registerSettings() {
     game.settings.register("ddb-native-bridge", "cobaltCookie", {
-      name: game.i18n.localize("DDB.Settings.Cobalt.Name"),
-      hint: game.i18n.localize("DDB.Settings.Cobalt.Hint"),
+      name: "Cobalt Cookie",
+      hint: "Paste your active D&D Beyond session Cobalt cookie here to authenticate the real-time stream.",
       scope: "world",
       config: true,
       type: String,
@@ -13,8 +13,8 @@ export class DDBAuth {
     });
 
     game.settings.register("ddb-native-bridge", "campaignId", {
-      name: game.i18n.localize("DDB.Settings.CampaignId.Name"),
-      hint: game.i18n.localize("DDB.Settings.CampaignId.Hint"),
+      name: "Campaign / Character ID",
+      hint: "D&D Beyond Campaign or Character ID for gamelog filtering.",
       scope: "world",
       config: true,
       type: String,
@@ -22,8 +22,8 @@ export class DDBAuth {
     });
 
     game.settings.register("ddb-native-bridge", "pollInterval", {
-      name: game.i18n.localize("DDB.Settings.PollInterval.Name"),
-      hint: game.i18n.localize("DDB.Settings.PollInterval.Hint"),
+      name: "Poll Interval (ms)",
+      hint: "Polling frequency in milliseconds for fetching new gamelog entries (default: 3000ms).",
       scope: "world",
       config: true,
       type: Number,
