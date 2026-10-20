@@ -20,7 +20,10 @@ Modern, lightweight, serverless Foundry VTT module compatible with **Foundry VTT
 4. Locate the cookie named `Cobalt` and copy its value string.
 
 ### 2. Installation in Foundry VTT
-1. Place the `ddb-native-bridge` folder into your Foundry VTT `Data/modules/` directory (or install via manifest URL).
-2. Launch Foundry VTT (`v14.369+`) with the **dnd5e** system (`v6.0.6+`).
-3. Enable **D&D Beyond Native Bridge** in Manage Modules.
-4. Go to **Configure Settings** -> **Module Settings** -> **D&D Beyond Native Bridge**, paste your `Cobalt` cookie, and save.
+1. In Foundry VTT, navigate to **Add-on Modules** -> **Install Module**.
+2. Paste the following manifest URL into the **Manifest URL** field and click **Install**:
+   ```
+   https://raw.githubusercontent.com/maximusdurden/ddb-native-bridge/master/module.json
+   ```
+3. Enable **D&D Beyond Native Bridge** in your world's module settings.
+4. Go to **Configure Settings** -> **Module Settings**, paste your `Cobalt` cookie under **D&D Beyond Native Bridge**, and save.
