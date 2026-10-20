@@ -3,6 +3,8 @@
  */
 export class DDBAuth {
   static registerSettings() {
+    if (typeof game === "undefined" || !game.settings) return;
+    
     game.settings.register("ddb-native-bridge", "cobaltCookie", {
       name: "Cobalt Cookie",
       hint: "Paste your active D&D Beyond session Cobalt cookie here to authenticate the real-time stream.",
@@ -32,6 +34,7 @@ export class DDBAuth {
   }
 
   static getHeaders() {
+    if (typeof game === "undefined" || !game.settings) return {};
     const cobalt = game.settings.get("ddb-native-bridge", "cobaltCookie");
     return {
       "Cookie": `Cobalt=${cobalt}`,
