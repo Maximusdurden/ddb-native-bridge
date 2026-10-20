@@ -1,0 +1,42 @@
+{
+  "id": "ddb-native-bridge",
+  "title": "D&D Beyond Native Bridge",
+  "description": "Bridges D&D Beyond real-time dice rolls directly into Foundry VTT v14.369+ and dnd5e v6.0.6+ as 100% native chat cards using official Roll instances.",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.369",
+    "maximum": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "manifest": "https://raw.githubusercontent.com/foundryvtt/dnd5e/master/system.json",
+        "compatibility": {
+          "minimum": "6.0.6",
+          "verified": "6.0.6",
+          "maximum": "7.0.0"
+        }
+      }
+    ]
+  },
+  "author": "Derrick Swymer (Maximus Durden)",
+  "scripts": [
+    "src/main.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "socket": false,
+  "manifest": "https://raw.githubusercontent.com/maximusdurden/ddb-native-bridge/main/module.json",
+  "download": "https://github.com/maximusdurden/ddb-native-bridge/releases/download/v1.0.0/module.zip"
+}

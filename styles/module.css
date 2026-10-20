@@ -1,0 +1,4 @@
+/* DDB Native Bridge CSS */
+.chat-message.dnd5e.roll-card {
+  border: 2px solid #b30000;
+}

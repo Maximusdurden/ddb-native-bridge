@@ -1,0 +1,8 @@
+{
+  "DDB.Settings.Cobalt.Name": "Cobalt Cookie",
+  "DDB.Settings.Cobalt.Hint": "Paste your active D&D Beyond session Cobalt cookie here to authenticate the real-time stream.",
+  "DDB.Settings.CampaignId.Name": "Campaign / Character ID",
+  "DDB.Settings.CampaignId.Hint": "D&D Beyond Campaign or Character ID for gamelog filtering.",
+  "DDB.Settings.PollInterval.Name": "Poll Interval (ms)",
+  "DDB.Settings.PollInterval.Hint": "Polling frequency in milliseconds for fetching new gamelog entries (default: 3000ms)."
+}
